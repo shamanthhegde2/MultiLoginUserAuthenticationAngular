@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit {
       this.route.navigate(['/home']);
     }
     this.loginForm = this.fb.group({
-      email: ['', [Validators.email, Validators.required]],
+      email: ['', [Validators.required]],
       password: ['', Validators.required],
     });
     this.usersService.getUsers().subscribe(

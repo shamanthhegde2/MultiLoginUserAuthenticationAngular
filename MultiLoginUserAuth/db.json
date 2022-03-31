@@ -1,7 +1,7 @@
 {
   "users":[
-      {"email":"user@gmail.com","password":"user","role":"User"},
-      {"email":"admin@gmail.com","password":"admin","role":"Admin"},
-      {"email":"superAdmin@gmail.com","password":"superAdmin","role":"SuperAdmin"}
+      {"email":"User","password":"User@123","role":"User"},
+      {"email":"Admin","password":"Admin@123","role":"Admin"},
+      {"email":"SuperAdmin","password":"Superadmin@123","role":"SuperAdmin"}
   ]
 }

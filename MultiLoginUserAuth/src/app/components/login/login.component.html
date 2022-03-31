@@ -1,18 +1,17 @@
 <form [formGroup]="loginForm" (ngSubmit)="submitForm()">
     <div class="emailForm">
-        <input formControlName="email" type="email" name="email" id="email" placeholder="Email">
+        <input formControlName="email" type="text" name="email" id="username" placeholder="Email">
         <div *ngIf="email.invalid && email.touched" class="emailErrors">
-            <div *ngIf="email?.errors?.['required']" class="noInput">Email required</div>
-            <div *ngIf="email?.errors?.['email']" class="invalid">Email is invalid</div>
+            <div *ngIf="email?.errors?.['required']" class="noInput">username required</div>
         </div>
     </div>
     <div class="passForm">
-        <input formControlName="password" type="password" name="pass" id="pass" placeholder="Password">
+        <input formControlName="password" type="password" name="pass" id="password" placeholder="Password">
         <div *ngIf="password.invalid && password.touched" class="passErrors">
             <div *ngIf="password?.errors?.['required']" class="noInput">password required</div>
         </div>
     </div>
-    <input [disabled]="loginForm.invalid" type="submit" value="Log In">
+    <input [disabled]="loginForm.invalid" type="submit" value="Log In" id="submit">
 </form>
 <div class="show" [ngClass]="{'show':show}">
     Login Failed

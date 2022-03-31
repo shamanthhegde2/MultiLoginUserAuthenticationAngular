@@ -7,7 +7,10 @@ import { CanActivate } from '@angular/router';
 export class AuthAdminRoleGuard implements CanActivate {
   canActivate(): boolean {
     const info = <string>localStorage.getItem('log');
-    if (JSON.parse(info).role == 'Admin') {
+    if (
+      JSON.parse(info).role == 'Admin' ||
+      JSON.parse(info).role == 'SuperAdmin'
+    ) {
       return true;
     }
     return false;

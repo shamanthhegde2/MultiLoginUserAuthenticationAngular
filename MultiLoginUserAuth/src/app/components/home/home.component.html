@@ -1,6 +1,6 @@
-<h2>Welcome {{role}}</h2>
-<a routerLink="viewInvoice">view Invoice</a><br>
-<a routerLink="updateInvoice">update Invoice</a><br>
-<a routerLink="createInvoice">create Invoice</a><br>
+<h2 id="{{'Welcome'+role}}">Welcome {{role}}</h2>
+<a routerLink="viewInvoice" id="viewInvoice">view Invoice</a><br>
+<a routerLink="updateInvoice" id="addInvoice">add Invoice</a><br>
+<a routerLink="createInvoice" id="updateInvoice">update Invoice</a><br>
 <button (click)="logOut()">log out</button>
 <router-outlet></router-outlet>
